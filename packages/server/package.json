@@ -1,0 +1,28 @@
+{
+	"name": "@kelpie/server",
+	"version": "0.1.0",
+	"license": "Apache-2.0",
+	"type": "module",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"scripts": {
+		"build": "tsc -b",
+		"check": "tsc -b --pretty false",
+		"dev": "tsx watch src/main.ts",
+		"test": "vitest run",
+		"typecheck": "tsc -b --pretty false"
+	},
+	"dependencies": {
+		"@hono/node-server": "^1.13.8",
+		"@kelpie/core": "workspace:*",
+		"@kelpie/protocol": "workspace:*",
+		"drizzle-orm": "^0.38.3",
+		"hono": "^4.7.2",
+		"jose": "^5.9.6",
+		"pg": "^8.13.1",
+		"pino": "^9.6.0"
+	},
+	"devDependencies": {
+		"tsx": "^4.19.2"
+	}
+}
