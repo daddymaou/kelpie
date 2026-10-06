@@ -1,0 +1,28 @@
+node_modules
+.DS_Store
+Thumbs.db
+
+# build output
+/.svelte-kit
+/build
+/.vercel
+/.output
+
+# generated search index
+/pagefind
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# local env files
+.env
+.env.*
+!.env.example
+
+# editors
+.idea
+.vscode/*
+!.vscode/extensions.json
